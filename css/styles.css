@@ -6,20 +6,26 @@
 img.thumbs {
     width: 100%;
     height: auto;
+    margin-bottom: 25px;
 }
 
 body {
-	background-color: #5d5b5b;
+	background-color: #eaeaea;
 	min-height: 1700px;
 }
 
-/* Layout ----------*/
+ul#gallery-list li {
+	list-style: none;
+}
+
+/* Clearfix ----------*/
 .clearfix::after {
 	display: table;
 	content: '';
 	clear: both;
 }
 
+/* Header ----------*/
 header {
 	position: relative;
 }
@@ -31,9 +37,10 @@ header {
 	height: 80px;
 	background-color: #fff;
 	top: 0;
-	z-index: 999999;
+	z-index: 999;
 }
 
+/* Layout ----------*/
 #main-container {
 	margin-top: 80px;
 	min-height: 600px;
@@ -63,7 +70,7 @@ header input {
 
 /* Columns ----------*/
 .col_4 {
-		margin: 0 2% 2%;
+		margin: 0 2%;
 		float: left;
 		width: 100%;
 }
