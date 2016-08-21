@@ -6,13 +6,115 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	
+
+	<!-- Facnybox Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-	<!-- Google Fonts -->	
+	<!-- Google Fonts -->
 </head>
 <body>
 
+	<header class="main-wrapper">
+		<div id="search-box">
+			<input type="text" name="search" placeholder="Search Images">
+		</div>
+	</header>
 
+	<div id="main-container" class="main-wrapper">
+		<div class="row clearfix">
+			<div class="col_4">
+				<a href="img/01.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/01.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/02.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/02.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/03.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/03.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/04.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/04.jpg">
+				</a>
+			</div>
+		</div>
+
+		<div class="row clearfix">
+			<div class="col_4">
+				<a href="img/05.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/05.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/06.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/06.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/07.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/07.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/08.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/08.jpg">
+				</a>
+			</div>
+		</div>
+
+		<div class="row clearfix">
+			<div class="col_4">
+				<a href="img/09.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/09.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/10.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/10.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/11.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/11.jpg">
+				</a>
+			</div>
+			<div class="col_4">
+				<a href="img/12.jpg" class="fancybox" rel="main-gallery" title="tite">
+					<img class="thumbs" src="img/thumbs/12.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="plugins/fancybox/js/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="plugins/fancybox/js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="plugins/fancybox/js/jquery.fancybox.js?v=2.1.5"></script>
+
+	<!-- Custom Fancybox Parameters-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				maxWidth    : 800,
+				autoCenter  : true
+			});
+		});
+	</script>																
 </body>
 </html>
